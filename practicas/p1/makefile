@@ -4,11 +4,8 @@
 
 compilador:=g++
 
-pc: prodcons-plantilla_exe
-	./$<
-
-fu: fumadores_exe
-	./$<
+pc: prodcons_exe fumadores_exe estancos2_exe
+	./$<	# si quiero que al hacer make se ejecuten   
 
 %_exe: %.cpp
 		$(compilador) -std=c++11 -pthread -o $@ $< Semaphore.cpp 

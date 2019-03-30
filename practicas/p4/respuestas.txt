@@ -1,0 +1,11 @@
+Víctor García Carrera, victorgarcia@correo.ugr.es
+
+ACTIVIDAD 1
+
+COMENTARIOS: Se ha introducido a propósito un tiempo de cómputo de la tarea E superior al planificado para comprobar el correcto manejo de la situación de error  del ejecutivo cíclico
+
+RESPUESTAS A LAS CUESTIONES DE LA ACTIVIDAD 2 DE LA PRACTICA 4
+
+1-  En mi implementación, el caso 2, que es el ciclo secundario en el que se ejecutan las tareas A, B y D, es el caso en el que se da el mínimo tiempo de espera, que es de 10ms, desde que finaliza la ejecución de todas las tareas.
+
+2-  Si la tarea D tuviese un tiempo de cómputo superior de 250ms, 10ms más que en la implementación realizada, seguiría siendo posible planificar las tareas, pues se seguiría dando un caso como el 2 en el que se ejecutan A, B y D, siendo su tiempo de cómputo total de 500ms, exactamente el tiempo del ciclo secundario. Dado que existe un deadline superior del ciclo secundario que lo deja en 520ms, podría planificarse con este esquema. Además, si después de este caso situamos el caso 3 en el que solo se ejecutan A y B, caso que tiene un gran tiempo de espera o tiempo de holgura, podría compensarse el tiempo que el caso anterior 2 consume de más. Podemos comprobar que la planificación implementada permite este aumento cambiando el valor del tiempo de cómputo de la tarea D a 250ms y viendo que el ejecutivo cíclico sigue funcionando sin problemas.

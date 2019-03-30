@@ -1,0 +1,1 @@
+Para ejecutar los programas con dos posibles implementaciones de pila (LIFO o FIFO), comentar y descomentar en el main de estos programas las versiones correspondientes. ESPECIALMENTE PARA prodcons1_sc.cpp, prodcons2_sc.cpp, prodcons2_su.cpp
